@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url('./fonts/bold.OTF');
+}
+
+@font-face{
+    font-family:"SF Pro Display Regular";
+    src:url('./fonts/regular.OTF');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    padding: 10px;
+    min-height:100vh;
+    min-width: 100vw;
+    background-color: rgb(23,25,29);
+}
+nav {
+    width: 100%;
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+nav .input i {
+    margin-left: 10px;
+}
+
+nav .input {
+    background-color: rgb(53,55,61);
+    width: 80%;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    font-family: 'SF Pro Display Regular';
+    align-items: center;
+}
+
+nav .input input {
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+nav .day_night {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .day_night button {
+    padding: 7px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.main_content {
+    
+}
