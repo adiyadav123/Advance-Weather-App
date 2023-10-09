@@ -15,7 +15,7 @@ search_button.addEventListener("click", async() => {
           )
     } 
     
-    let geoApi = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`;
+    let geoApi = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`;
     let geoRes = await fetch(geoApi);
     let geoData = await geoRes.json();
 
