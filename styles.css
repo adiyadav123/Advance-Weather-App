@@ -102,3 +102,17 @@ nav .day_night button {
 .city_details .time {
     color: rgb(151, 153, 156);
 }
+
+.images {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+}
+
+.images .image1 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(23,25,29);
+}
