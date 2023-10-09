@@ -1,6 +1,10 @@
 let search_button = document.querySelector(".search");
 let apiKey = 'c1b724d4a8b26f8f2bf3bd5cbd950b10';
 let searchInput = document.querySelector("#text");
+let city_name = document.querySelector("#city_name");
+let time = document.querySelector(".time");
+let temp = document.querySelector("#temp");
+let st = document.querySelector(".status");
 
 
 search_button.addEventListener("click", async() => {
@@ -28,7 +32,17 @@ search_button.addEventListener("click", async() => {
     let weatherRes = await fetch(weatherApi);
     let weatherData = await weatherRes.json();
 
-    console.log(weatherData);
+    let months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+    console.log(weatherData);
+    let date = new Date();
+    let day = date.getDate();
+    let mon = date.getMonth();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    city_name.innerHTML = `${weatherData.name}`;
+    time.innerHTML = `${day} ${months[mon]} ${hours}:${minutes}`;
+    temp.innerHTML = `${weatherData.main.feels_like}`;
+    st.innerHTML = `${weatherData.weather[0].description}`;
 
 });

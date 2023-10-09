@@ -70,7 +70,7 @@ nav .input input {
 .main_content {
     background-color: rgb(53,55,61);
     min-height: 60vh;
-    width: 100%;
+    min-width: 100%;
     padding: 15px 20px;
     border-radius: 20px;
     font-family: "SF Pro Display Regular";
@@ -155,4 +155,7 @@ nav .input input {
 .tips_content {
     color: rgb(212, 210, 210);
     font-family: "SF Pro Display Regular";
+}
+.status {
+    text-transform: capitalize;
 }
