@@ -12,11 +12,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 0.5s;
+    font-family: "SF Pro Display Regular";
 }
 
 body {
     height: 100vh;
+    background-color: rgb(23,25,29);
     width: 100vw;
+    transition: all ease 0.5s;
 }
 
 .container {
@@ -30,7 +34,7 @@ body {
 }
 nav {
     width: 100%;
-    padding: 10px 0 20px 0;
+    padding: 15px 0 20px 0;
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -42,9 +46,9 @@ nav .input i {
 
 nav .input {
     background-color: rgb(53,55,61);
-    width: 80%;
-    font-size: 20px;
-    padding: 7px;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
     border-radius: 15px;
     color: white;
     display: flex;
@@ -54,34 +58,18 @@ nav .input {
 
 nav .input input {
     margin-left: 10px;
-    background-color: transparent;
-    outline: none;
-    color: white;
-    border: none;
-    font-size: 20px;
-}
-
-nav .day_night {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav .day_night button {
-    padding: 7px;
     width: 100%;
     background-color: transparent;
     outline: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
     color: white;
+    border: none;
+    font-size: 17px;
 }
+
 
 .main_content {
     background-color: rgb(53,55,61);
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     padding: 15px 20px;
     border-radius: 20px;
@@ -106,6 +94,7 @@ nav .day_night button {
 .images {
     margin-top: 50px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-self: space-between;
 }
@@ -115,4 +104,55 @@ nav .day_night button {
     width: 150px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(23,25,29);
+}
+
+.image2 {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+.images .image2 img {
+    height: 140px;
+    width: 140px;
+}
+
+.images .image2 span {
+    color: white;
+}
+
+.images .image2 #temp{
+    margin-top: -30px;
+    font-size: 50px;
+}
+
+.tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(70,72,78);
+    border: 1px solid rgb(100, 100, 100);
+    min-height: 20vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.con_head {
+    color: white;
+    font-family: "SF Pro Display Regular";
+}
+
+.bulb {
+    color: orange;
+    padding-right: 10px;
+}
+
+.tips_content {
+    color: rgb(212, 210, 210);
+    font-family: "SF Pro Display Regular";
 }

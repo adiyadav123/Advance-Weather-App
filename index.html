@@ -11,19 +11,14 @@
     <div class="container">
         <nav>
             <div class="input">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search city by name.">
-            </div>
-            <div class="day_night">
-                <button>
-                    <i class="fa-regular fa-sun"></i>
-                </button>
+                <i class="fa-solid fa-magnifying-glass search"></i>
+                <input type="search" placeholder="Search city by name." id="text">
             </div>
         </nav>
         <div class="main_content">
             <div class="city_details">
                 <p class="name">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-location-dot loc"></i>
                     <span id="city_name">Varanasi</span>
                 </p>
                 <p class="time">
@@ -32,12 +27,33 @@
             </div>
             <div class="images">
                 <div class="image1">
-                    <img src="./images/panda_sun.jpeg" alt="image">
+                    <img src="./images/panda_sun.jpeg" alt="image" class="main_image">
+                </div>
+                <div class="image2">
+                    <img src="./images/icons/clear_sun.png" alt="clear_sun">
+                    <span id="temp">34°</span>
+                    <span class="status">Sunny</span>
+                </div>
+            </div>
+            <div class="tips">
+                <div class="con">
+                    <p class="con_head">
+                        <i class="fa-solid fa-lightbulb bulb"></i>
+                         Tips for you
+                    </p>
+                    <br>
+                    <p class="tips_content">
+                        Stay hydrated by drinking plenty of water and wearing sunscreen to protect your skin.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="./images/girl.png" alt="">
                 </div>
             </div>
         </div>
         
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
