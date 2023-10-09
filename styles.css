@@ -21,6 +21,9 @@ body {
 
 .container {
     padding: 10px 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height:100vh;
     min-width: 100vw;
     background-color: rgb(23,25,29);
@@ -80,5 +83,22 @@ nav .day_night button {
     background-color: rgb(53,55,61);
     height: 60vh;
     width: 100%;
-    border-radius: 15px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: "SF Pro Display Regular";
+}
+
+.city_details {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.city_details .name i {
+    margin-right: 6px;
+}
+
+.city_details .time {
+    color: rgb(151, 153, 156);
 }
