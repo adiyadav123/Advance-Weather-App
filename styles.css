@@ -20,14 +20,14 @@ body {
 }
 
 .container {
-    padding: 10px;
+    padding: 10px 20px;
     min-height:100vh;
     min-width: 100vw;
     background-color: rgb(23,25,29);
 }
 nav {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0 20px 0;
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -77,5 +77,8 @@ nav .day_night button {
 }
 
 .main_content {
-    
+    background-color: rgb(53,55,61);
+    height: 60vh;
+    width: 100%;
+    border-radius: 15px;
 }
