@@ -20,6 +20,8 @@ function timer() {
 
     let modified_min = minutes.toString();
 
+    // im doing a test
+
     if (modified_min.length < 2) {
         modified_min = `0${modified_min}`;
     }
